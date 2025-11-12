@@ -1,0 +1,21 @@
+{% extends "./base.html" %}
+
+{% block body %}
+<section class="hero">
+  <img src="{{ get_asset_url('../images/hero.jpg') }}" alt="Beautiful view" />
+  <div class="hero-text">
+    <h2>Welcome to My First HubSpot Theme</h2>
+    <p>Clean, fast, and optimized for search engines.</p>
+    <a href="/about" class="btn">About Me</a>
+  </div>
+</section>
+
+<section class="features container">
+  <h3>Why Choose This Theme</h3>
+  <ul>
+    <li>SEO Tags Included (title, meta, Open Graph)</li>
+    <li>Responsive Layout</li>
+    <li>Accessible and Semantic HTML</li>
+  </ul>
+</section>
+{% endblock %}

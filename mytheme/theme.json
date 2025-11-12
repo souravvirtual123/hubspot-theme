@@ -1,0 +1,10 @@
+{
+  "label": "Simple Website Theme",
+  "preview_path": "templates/home.html",
+  "screenshot_path": "images/hero.jpg",
+  "author": {
+    "name": "Sourav Mondal",
+    "email": "mondalsourav321@gmail.com"
+  },
+  "version": "1.0.0"
+}

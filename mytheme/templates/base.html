@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ content.html_title or "Simple Website Theme" }}</title>
+  <meta name="description" content="{{ content.meta_description or "A lightweight, SEO-optimized HubSpot theme." }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph (SEO & Social Sharing) -->
+  <meta property="og:title" content="{{ content.html_title or "Simple Website Theme" }}">
+  <meta property="og:description" content="{{ content.meta_description or "A lightweight, SEO-optimized HubSpot theme." }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ request.full_url }}">
+  <meta property="og:image" content="{{ get_asset_url("../images/hero.jpg") }}">
+
+  <link rel="stylesheet" href="{{ get_asset_url("../css/style.css") }}">
+</head>
+
+<body>
+  {% include "../partials/header.html" %}
+  
+  <main id="content" role="main">
+    {% block body %}{% endblock %}
+  </main>
+
+  {% include "../partials/footer.html" %}
+</body>
+</html>
